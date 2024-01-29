@@ -73,9 +73,9 @@ impl Default for App {
             license_edition: KeyEdition::Extreme,
             license_seats: 1,
             license_purchase: Utc::today(),
-            license_expire: Utc::today() + Duration::days(3658),
+            license_expire: Utc::today() + Duration::days(3652),
             license_expire_never: true,
-            license_maintenance: Utc::today() + Duration::days(3658),
+            license_maintenance: Utc::today() + Duration::days(3652),
 
             selected_license: None,
 
@@ -169,7 +169,7 @@ impl eframe::App for App {
                     });
 
                     let min_date = self.license_purchase + Duration::days(1);
-                    let max_date = self.license_purchase + Duration::days(3658);
+                    let max_date = self.license_purchase + Duration::days(3652);
 
                     self.license_expire = self.license_expire.clamp(min_date, max_date);
                     self.license_maintenance = self.license_maintenance.clamp(min_date, max_date);
