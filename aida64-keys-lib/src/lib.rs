@@ -118,7 +118,7 @@ impl License {
             purchase_date: Utc::today(),
             expiry: None,
             seats: 1,
-            maintenance_expiry: Duration::days(3658),
+            maintenance_expiry: Duration::days(3652),
 
             unk1,
             unk2,
@@ -149,7 +149,7 @@ impl License {
     }
 
     pub fn with_maintenance_expiry(mut self, duration: Duration) -> Self {
-        self.maintenance_expiry = duration.clamp(Duration::days(1), Duration::days(3658));
+        self.maintenance_expiry = duration.clamp(Duration::days(1), Duration::days(3652));
         self
     }
 
