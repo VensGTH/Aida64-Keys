@@ -3,7 +3,7 @@ name: Windows/Ubuntu/MacOS
 on:
   workflow_dispatch:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     paths: [ "**.rs", "**.toml" ]
 
 env:
