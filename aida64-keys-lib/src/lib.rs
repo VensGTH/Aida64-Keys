@@ -258,7 +258,7 @@ impl License {
             && (99..990).contains(&self.unk1)
             && self.unk2 <= 100
             && self.unk3 <= 100
-            && self.maintenance_expiry.num_days() < 3659
+            && self.maintenance_expiry.num_days() < 3653
     }
 }
 
